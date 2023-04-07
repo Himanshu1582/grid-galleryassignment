@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Gallery</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(0, 0, 0, 0.865);
+            padding: 20px;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr  ifr  1fr  1fr  1fr  1fr  ;
+            grid-template-rows:200px 200px 200px 200px;
+            grid-template-areas: 
+            "A B C D E G"
+            "A F C D H G"
+            "I I J K Z L"
+            "I I M N O P"
+            "Q Q R N S T"
+            ;
+            grid-column-gap:10px; 
+            grid-row-gap: 1px;
+
+        }
+        .grid-container div img{
+            border:1px solid white
+        }
+        
+        .item1{
+            grid-area: A ;
+        }
+        .item2{
+            grid-area: B ;
+        }
+        .item3{
+            grid-area: C;
+        }
+        .item4{
+            grid-area: D;
+        }
+        .item5{
+            grid-area: E;
+        }
+        .item6{
+            grid-area: F;
+        }
+        .item7{
+            grid-area: G;
+        }
+        .item8{
+            grid-area: H;
+        }
+        .item9{
+            grid-area: I;
+        }
+        .item10{
+            grid-area: J;
+        }
+        .item11{
+            grid-area: K;
+        }
+        .item12{
+            grid-area: L;
+        }
+        .item13{
+            grid-area: M;
+        }
+        .item14{
+            grid-area: N;
+        }
+        .item15{
+            grid-area: O;
+        }
+        .item16{
+            grid-area: P;
+        }
+        .item17{
+            grid-area: Q;
+        }
+        .item18{
+            grid-area: R;
+        }
+        .item19{
+            grid-area: S;
+        }
+        .item20{
+            grid-area: T;
+        }
+        @media  screen and (max-width:700px) {
+            .grid-container{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+        /* .image1{
+            width:200px
+        }
+        .grid-container div{
+            border: 2px solid black;
+        } */
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">   <img src="https://source.unsplash.com/cssvEZacHvQ" width="190vw" height="350vh"></div>
+        <div class="item2">   <img src="https://source.unsplash.com/oR0uERTVyD0" width="80.5vw"height="165vh"></div>
+        <div class="item3">   <img src="https://source.unsplash.com/01_igFr7hd4" width="170 vw"height="165vh"></div>
+        <div class="item4">   <img src="https://source.unsplash.com/O-8Fmpx7HqQ" width="190vw" height="350vh"></div>
+        <div class="item5">   <img src="https://source.unsplash.com/cfQEO_1S0Rs" width="190vw" height="165vh"></div>
+        <div class="item6">   <img src="https://source.unsplash.com/FpATXvTxEI4" width="90vw"  height="145vh"></div>
+        <div class="item7">   <img src="https://source.unsplash.com/uf4oyaimWwg" width="190vw" height="350vh"></div>
+        <div class="item8">   <img src="https://source.unsplash.com/EwKXn5CapA4" width="100vw" height="145vh"></div>
+        <div class="item9">   <img src="https://source.unsplash.com/rTZW4f02zY8" width="350vw" height="350vh"></div>
+        <div class="item10">  <img src="https://source.unsplash.com/vltMzn0jqsA" width="190vw" height="165vh"></div>
+        <div class="item11">  <img src="https://source.unsplash.com/aQOe0Ri267U" width="190vw" height="165vh"></div>
+        <div class="item12">  <img src="https://source.unsplash.com/rMmibFe4czY" width="80vw"  height="165vh"></div>
+        <div class="item13">  <img src="https://source.unsplash.com/-Bq3TeSBRdE" width="100vw" height="145vh"></div>
+        <div class="item14">  <img src="https://source.unsplash.com/IicyiaPYGGI" width="190vw" height="350vh"></div>
+        <div class="item15">  <img src="https://source.unsplash.com/jR4Zf-riEjI" width="190vw" height="145vh"></div>
+        <div class="item16">  <img src="https://source.unsplash.com/IJ25m7fXqtk" width="190vw" height="145vh"></div>
+        <div class="item17">  <img src="https://source.unsplash.com/eOpewngf68w" width="280vw" height="165vh"></div>
+        <div class="item18">  <img src="https://source.unsplash.com/h54G2wyDadc" width="80vw"  height="165vh"></div>
+        <div class="item19">  <img src="https://source.unsplash.com/_aVKjJhFdn0" width="190vw" height="165vh"></div>
+        <div class="item20">  <img src="https://source.unsplash.com/uaJLLOhY2yU" width="100vw" height="165vh"></div>
+    </div>
+</body>
+</html
